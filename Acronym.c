@@ -20,10 +20,11 @@ int main()
         }
         if (k == 10 || i == 0)
         {
-            printf("%c", toupper(p[0]));
+            printf("%c",toupper(p[0]));
         }
         p = strtok('\0'," ");
-        i++, k = 0;
+        i++ 
+        k = 0;
     }
     return 0;
 }
