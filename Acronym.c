@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
 int main()
 {
     int i = 0, j, k = 0;
@@ -14,13 +14,15 @@ int main()
         for (j=0 ; j < 10; j++)
         {
             if (strcmp(p, delim[j]))
+            {
                 k++;
+            }      
         }
         if (k == 10 || i == 0)
         {
             printf("%c", toupper(p[0]));
         }
-        p = strtok(NULL," ");
+        p = strtok('\0'," ");
         i++, k = 0;
     }
     return 0;
