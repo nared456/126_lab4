@@ -32,6 +32,7 @@ int main()
                 tmp = r[0];
                 r[0] = r[2];
                 r[2] = tmp;
+                tmp = r[1];
                 r[1] = r[3];
                 r[3] = tmp;
             }
